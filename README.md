@@ -28,17 +28,17 @@ usage: Tools
 Search with plain text match
 
 ```
-$ spark-submit --class FieldsSearcher fields-search.jar -database shopee -fields "click,impression"
+$ spark-submit --class FieldsSearcher fields-search.jar -database test -fields "click,impression"
 ```
 
 Search with regex match
 
 ```
-$ spark-submit --class FieldsSearcher fields-search.jar -database shopee -regex -fields ".*click.*,.*impression.*"
+$ spark-submit --class FieldsSearcher fields-search.jar -database test -regex -fields ".*click.*,.*impression.*"
 ```
 
 Search with regex and recursive match
 
 ```
-$ spark-submit --class FieldsSearcher fields-search.jar -database shopee -regex -recursive -fields ".*click.*,.*impression.*"
+$ spark-submit --class FieldsSearcher fields-search.jar -database test -regex -recursive -fields ".*click.*,.*impression.*"
 ```
